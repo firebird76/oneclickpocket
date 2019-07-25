@@ -41,7 +41,7 @@ class oneclickpocket extends Plugin {
 	function hook_article_button($line) {
 		$article_id = $line["id"];
 
-		$rv = "<img src=\"plugins/oneclickpocket/pocketgrey.png\"
+		$rv = "<img src=\"plugins.local/oneclickpocket/pocketgrey.png\"
 			class=\"tagsPic\" id=\"ocp$article_id\" style=\"cursor : pointer\"
 			onclick=\"shareArticleToPocket($article_id, this)\"
 			title='".__('Save to Pocket')."'>";
@@ -144,7 +144,7 @@ if (!function_exists('curl_init')) {
 	print '<td width=\"20%\">Get a <a href="http://getpocket.com/developer/apps/new">Pocket Consumer Key</a></td>';
 	print "<td class=\"prefValue\"><input dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"pocket_consumer_key\" value=\"$pocket_consumer_key\"></td>";
 	print "<tr><td width=\"20%\">".__("Pocket Access Token")."</td>";
-	print "<td width=\"20%\"><a href=\"plugins/oneclickpocket/auth.php?consumer_key=$pocket_consumer_key\">Generate Access Token</a></td>";
+	print "<td width=\"20%\"><a href=\"plugins.local/oneclickpocket/auth.php?consumer_key=$pocket_consumer_key\">Generate Access Token</a></td>";
 	print "<td class=\"prefValue\"><input dojoType=\"dijit.form.ValidationTextBox\" required=\"1\" name=\"pocket_access_token\" value=\"$pocket_access_token\"></td></tr>";
 	print "</table>";
 	print "<p><button dojoType=\"dijit.form.Button\" type=\"submit\">".__("Save")."</button>";

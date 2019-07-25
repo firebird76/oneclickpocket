@@ -13,7 +13,7 @@ function shareArticleToPocket(id, btn) {
 				if (ti.status=="1") {
 					Notify.info("Saved to Pocket:<br/><em>" + ti.title + "</em>");
 
-					btn.src='plugins/oneclickpocket/pocket.png';
+					btn.src='plugins.local/oneclickpocket/pocket.png';
 					btn.title='Saved to Pocket';
 				} else {
 					Notify.error("<strong>Error saving to Pocket!</strong><br/>("+ti.status+")");}
